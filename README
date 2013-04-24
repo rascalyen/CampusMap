@@ -4,7 +4,7 @@ The CampusMap App provides
 - Full list of all Parking lots on campus.
 - Full list of all ATMs on campus.
 - Full list of all Food Services on campus.
-- Full list of all Emergency phones on CSULA campus.
+- Full list of all Emergency phones on campus.
 - Directions function on campus.
 - Autocomplete department searching.
 
