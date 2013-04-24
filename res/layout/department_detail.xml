@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/department" />
+        <TextView
+            android:id="@+id/department_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout> 
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/college" />
+        <TextView
+            android:id="@+id/college_name"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp"
+            android:textSize="15sp">
+        </TextView>
+    </LinearLayout>     
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/website" />
+        <TextView
+            android:id="@+id/department_web"
+            android:autoLink="web"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp">
+        </TextView>
+    </LinearLayout> 
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/email" />
+        <TextView
+            android:id="@+id/department_email"
+            android:textSize="15sp"
+            android:autoLink="email"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp">
+        </TextView>
+    </LinearLayout>     
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/phone" />
+        <TextView
+            android:id="@+id/department_phone"
+            android:autoLink="phone"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp">
+        </TextView>
+    </LinearLayout> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/building" />
+        <TextView
+            android:id="@+id/department_location"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp">
+        </TextView>
+    </LinearLayout>  
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:text="@string/room" />
+        <TextView
+            android:id="@+id/department_room"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"       
+            android:layout_height="50dp">
+        </TextView>
+    </LinearLayout> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/goToMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:text="@string/location_action" />
+    </LinearLayout>
+        
+</LinearLayout>

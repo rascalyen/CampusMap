@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#666666"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buildings"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:text="@string/building" />
+
+        <Button
+            android:id="@+id/parking"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:text="@string/parking" />
+
+        <Button
+            android:id="@+id/emergency"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            android:text="@string/emergency" />
+
+        <Button
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/food" />
+
+        <Button
+            android:id="@+id/atm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/atm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip" 
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+        
+    <com.google.android.maps.MapView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/school_map"
+            android:clickable="true"
+            android:apiKey="0CYexe2LLUfZPC9FypBSAqNQxT32Hk-1I6M2lag" />
+    </LinearLayout>
+    
+</LinearLayout>

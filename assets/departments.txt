@@ -1,0 +1,52 @@
+@relation Departments
+
+@attribute id, college, department, web, email, phone, room, locationId
+
+@data
+1,Arts and Letters,Art,http://www.calstatela.edu/academic/art/,Art-Department@calstatela.edu,(323) 343-4010,326-327,15
+2,Arts and Letters,Communication Studies,http://www.calstatela.edu/academic/communication/,COMSDept@calstatela.edu,(323) 343-4200,104,34
+3,Arts and Letters,English,http://www.calstatela.edu/academic/english/,English@calstatela.edu,(323) 343-4140,A604,13
+4,Arts and Letters,Liberal Studies,http://www.calstatela.edu/dept/libstudies/,ylee@cslanet.calstatela.edu,(323) 343-4100,A405,13
+5,Arts and Letters,Modern Languages & Literatures,http://www.calstatela.edu/academic/mld/,Modlang@calstatela.edu,(323) 343-4230,D1054,28
+6,Arts and Letters,Music,http://www.calstatela.edu/academic/music/,music@calstatela.edu,(323) 343-4060,127,34
+7,Arts and Letters,Philosophy,http://www.calstatela.edu/dept/phil/,dbalder@cslanet.calstatela.edu,(323) 343-4180,A432,13
+8,Arts and Letters,Television & Film & Media Studies,http://www.calstatela.edu/academic/tvf/,tvfilmdepartment@calstatela.edu,(323) 343-5425,107,34
+9,Arts and Letters,Theatre Arts & Dance,http://www.calstatela.edu/dept/theatre_dance/,TAD@calstatela.edu,(323) 343-4110,5104,28
+10,Business and Economics,Accounting,http://cbe.calstatela.edu/acct/index.php,msantiste@cslanet.calstatela.edu,(323) 343-2830,F517,40
+11,Business and Economics,Economics and Statistics,http://cbe.calstatela.edu/econ/index.php,ptom@cslanet.calstatela.edu,(323) 343-2930,F917,40
+12,Business and Economics,Finance and Law,http://cbe.calstatela.edu/fin/index.php,cseanez@cslanet.calstatela.edu,(323) 343-2870,F717,40
+13,Business and Economics,Information Systems,http://cbe.calstatela.edu/is/index.php,mubago3@cslanet.calstatela.edu,(323) 343-2983,F603,40
+14,Business and Economics,Management,http://cbe.calstatela.edu/mgmt/index.php,igutierre@cslanet.calstatela.edu,(323) 343-2890,F717,40
+15,Business and Economics,Marketing,http://cbe.calstatela.edu/mkt/index.php,csankey@cslanet.calstatela.edu,(323) 343-2960,F917,40
+16,Charter College of Education,Applied and Advanced Studies in Education,http://www.calstatela.edu/academic/ccoe/index_aase.htm,efis@calstatela.edu,(323) 343-4330,C2098,28
+17,Charter College of Education,Curriculum and Instruction,http://www.calstatela.edu/academic/ccoe/index_edci.htm,ccoe@calstatela.edu,(323) 343-4350,C2097,28
+18,Charter College of Education,Special Education and Counseling,http://www.calstatela.edu/academic/ccoe/index_edsp.htm,sped@calstatela.edu,(323) 343-4400,C1064,28
+19,Engineering&Computer Science&Technology,Civil Engineering,http://www.calstatela.edu/academic/ecst/civil/,Civileng@calstatela.edu,(323) 343-4450,A212,13
+20,Engineering&Computer Science&Technology,Computer Science,http://www.calstatela.edu/academic/ecst/cs/,cs@calstatela.edu,(323) 343-6690,A322,13
+21,Engineering&Computer Science&Technology,Electrical and Computer Engineering,http://www.calstatela.edu/academic/ecst/ee/,ece@calstatela.edu,(323) 343-4470,A342,13
+22,Engineering&Computer Science&Technology,Mechanical Engineering,http://www.calstatela.edu/academic/ecst/me/,Mechengr@calstatela.edu,(323) 343-4490,A205,13
+23,Engineering&Computer Science&Technology,Technology,http://www.calstatela.edu/academic/ecst/tech/,Tech@calstatela.edu,(323) 343-4550,A337,13
+24,Health and Human Services,Child and Family Studies,http://www.calstatela.edu/academic/hhs/cfs/,prodri2@cslanet.calstatela.edu,(323) 343-6188,A504,13
+25,Health and Human Services,Communication Disorders,http://www.calstatela.edu/academic/hhs/comd/,eklein@cslanet.calstatela.edu,(323) 343-2881,B119,28
+26,Health and Human Services,Criminal Justice and Criminalistics,http://www.calstatela.edu/academic/hhs/crim_jus/,jpeters@calstatela.edu,(323) 343-4618,244,21
+27,Health and Human Services,Public Health,http://www.calstatela.edu/academic/hhs/ph/,ctrejo@cslanet.calstatela.edu,(323) 343-4740,302,40
+28,Health and Human Services,KineSsiology and Nutritional Science,http://www.calstatela.edu/academic/hhs/kns/,schoolkns@calstatela.edu,(323) 343-4650,206,7
+29,Health and Human Services,Nursing,http://www.calstatela.edu/academic/hhs/nursing/,chughes2@calstatela.edu,(323) 343-4730,415,40
+30,Health and Human Services,Social Work,http://www.calstatela.edu/academic/hhs/sw/,IndiraV@calstatela.edu,(323) 343-5860,F817,40
+31,Natural and Social Sciences,Anthropology,http://www.calstatela.edu/academic/anthro/index.htm,mbruno@calstatela.edu,(323) 343-2440,C4068,28
+32,Natural and Social Sciences,Asian and Asian American Studies,http://www.calstatela.edu/academic/aaas/,aaas@calstatela.edu,(323) 343-5773,D1051,28
+33,Natural and Social Sciences,Biological Sciences,http://www.calstatela.edu/academic/biol/,Biomicr@calstatela.edu,(323) 343-2050,143,11
+34,Natural and Social Sciences,Chicano Studies,http://www.calstatela.edu/academic/chs/index.htm,Chicano@calstatela.edu,(323) 343-2190,C4069,28
+35,Natural and Social Sciences,Chemistry & Biochemistry,http://www.calstatela.edu/dept/chem/index.htm,vllnwth@calstatela.edu,(323) 343-2300,616,38
+36,Natural and Social Sciences,Geosciences & Environment,http://www.calstatela.edu/academic/geos/,mmurill@calstatela.edu,(323)343-2400,C4067,28
+37,Natural and Social Sciences,History,http://www.calstatela.edu/academic/history/,history@calstatela.edu,(323) 343-2020,C4066,28
+38,Natural and Social Sciences,Latin American Studies,http://www.calstatela.edu/academic/las/,bbakerc@calstatela.edu,(323) 343-2290,C4069,28
+39,Natural and Social Sciences,Mathematics,http://www.calstatela.edu/academic/math/,math@calstatela.edu,(323) 343-2150,F206,40
+40,Natural and Social Sciences,Pan-African Studies,http://www.calstatela.edu/academic/pas/,pas@calstatela.edu ,(323) 343-2290,C3095,28
+41,Natural and Social Sciences,Physics & Astronomy,http://www.calstatela.edu/dept/physics/,MBruno@CSLANET.CalStateLA.edu,(323) 343-2100,140,11
+42,Natural and Social Sciences,Political Science,http://www.calstatela.edu/dept/pol_sci/index.htm,sbowman@calstatela.edu,(323) 343-2248,A526,13
+43,Natural and Social Sciences,Psychology,http://www.calstatela.edu/academic/psych/html/deptmenu.php,psych@calstatela.edu,(323) 343-2250,C3104,28
+44,Natural and Social Sciences,Sociology,http://www.calstatela.edu/academic/soc/index.htm,sociol@calstatela.edu,(323) 343-2200,C3093,28
+45,Extended Studies and International Programs,Extended Studies,http://www.calstatela.edu/extension/,extension@calstatela.edu,(323) 343-4900,211,18
+46,Extended Studies and International Programs,International Office,http://www.calstatela.edu/extension/internationaloffice/,international@calstatela.edu,(323) 343-3170,115,2
+47,The Honors College,College Office,http://www.calstatela.edu/academic/honorscollege/,honorscollege@calstatela.edu,(323) 343-5969,D1045,28

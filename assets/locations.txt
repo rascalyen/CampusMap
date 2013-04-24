@@ -1,0 +1,85 @@
+@relation Locations
+
+@attribute id, latitude, longitude, title, phone(could be none), web(could be none), type
+
+@data
+1,34.066686,-118.169076,Administration,(323) 343-3000,http://www.calstatela.edu/univ/directry/admindir.php,general
+2,34.066816,-118.169129,Admissions,(323) 343-3901,http://www.calstatela.edu/univ/admiss/,general
+3,34.068386,-118.169167,Alumni Center,(323) 343-2586,http://alumni.calstatela.edu/,general
+4,34.06485,-118.168283,Wallis Annenberg Integrated Sciences Complex,none,none,general
+5,34.068302,-118.167213,Arena Theatre,(323) 343-4110,http://www.calstatela.edu/dept/theatre_dance/,general
+6,34.07183,-118.169024,Anna Bing Arnold Children's Center,(323) 343-2470,http://www.calstatela.edu/univ/abacc/,general
+7,34.066444,-118.167656,Athletics - Eagles Nest,(323) 343-3080,http://www.csulaathletics.com/,general
+8,34.064466,-118.167116,Athletics - Jesse Owens Track and Field,(323) 343-3080,http://www.csulaathletics.com/,general
+9,34.065467,-118.166358,Athletics - Reeder Field,(323) 343-3080,http://www.csulaathletics.com/,general
+10,34.06417,-118.166325,Athletics - Tennis/Basketball Courts,(323) 343-3080,http://www.csulaathletics.com/,general
+11,34.065538,-118.169413,Biological Sciences,(323) 343-2050,http://www.calstatela.edu/academic/biol/,general
+12,34.066156,-118.168167,Career Center,(323) 343-3237,http://www.calstatela.edu/univ/cdc/,general
+13,34.066699,-118.166309,Engineering and Technology,(323) 343-4500,http://www.calstatela.edu/academic/ecst/,general
+14,34.066849,-118.168688,Financial Aid,(323) 343-6260,http://www.calstatela.edu/univ/finaid/,general
+15,34.067087,-118.166326,Fine Arts,(323)-343-4010,http://www.calstatela.edu/academic/art/,general
+16,34.067352,-118.166652,Fine Arts Gallery,(323) 343-4040,http://www.calstatela.edu/academic/art/gallery.php,general
+17,34.064031,-118.16919,Gerontology Center,(323) 343-4724,http://www.calstatela.edu/academic/aa/gsr/centers.php#agi,general
+18,34.067596,-118.168626,Golden Eagle,(323) 343-2531,http://www.calstatela.edu/univ/uas/,general
+19,34.065159,-118.170351,Greenlee Plaza,none,none,general
+20,34.065756,-118.168278,Student Health Center,(323) 343-3301,http://www.calstatela.edu/univ/hlth_ctr/,general
+21,34.062101,-118.173716,Hertzberg-Davis Forensic Science Center,(323) 343-4610,http://www.calstatela.edu/academic/hhs/crim_jus/,general
+22,34.067565,-118.167134,Los Angeles County High School for the Arts,(323) 343-2550,http://artshigh.org/,general
+23,34.064344,-118.170924,Marc and Eva Stern Math and Science School,(323) 987-2144,http://sternmass.org/,general
+24,34.069219,-118.165553,Housing Information,(323) 343-4800,http://www.calstatela.edu/univ/housing/,general
+25,34.06597,-118.165456,Hydrogen Station,none,none,general
+26,34.06489,-118.172823,Information - Welcome Center,none,none,general
+27,34.06917,-118.167924,Intimate Theatre,(323) 343-6611,http://www.luckmanarts.org/,general
+28,34.067981,-118.16558,King Hall/Lecture Halls,none,none,general
+29,34.065125,-118.168554,La Kretz Hall,none,none,general
+30,34.067779,-118.167492,John F. Kennedy Memorial Library,(323) 343-3950,http://www.calstatela.edu/library/,general
+31,34.067242,-118.167473,John F. Kennedy Memorial Library - Palmer Wing,(323) 343-3950,http://www.calstatela.edu/library/,general
+32,34.06919,-118.168836,Luckman Theatre,(323) 343-6611,http://www.luckmanarts.org/directions/,general
+33,34.068538,-118.168314,Luckman Gallery,(323) 343-6604,http://www.luckmanarts.org/directions/,general
+34,34.068702,-118.167106,Music,(323) 343-4060,http://www.calstatela.edu/academic/music/,general
+35,34.068658,-118.167827,Music Hall,(323) 343-4060,http://www.calstatela.edu/academic/music/,general
+36,34.065936,-118.167091,NASA Space Lab,(323) 343-5445,http://www.calstatela.edu/orgs/space/,general
+37,34.06447,-118.172709,Parking/Transportation Service Center/Police/Public Safety,(323) 343-3700,http://www.calstatela.edu/univ/police/,general
+38,34.065833,-118.170619,Physical Sciences,none,none,general
+39,34.063872,-118.169858,Salazar Hall,none,none,general
+40,34.06424,-118.16941,Simpson Tower,none,none,general
+41,34.068447,-118.167956,State Playhouse,(323) 343-4110,http://www.calstatela.edu/dept/theatre_dance/,general
+42,34.068169,-118.168931,Student Union,(323) 343-2450,http://calstatelausu.org/,general
+43,34.063126,-118.168634,Transit Center,none,none,general
+44,34.069581,-118.170453,TV/Film/Media Studies,(323) 343-5425,http://www.calstatela.edu/academic/tvft/,general
+45,34.0634,-118.173077,Parking Lot 1,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+46,34.062979,-118.173206,Parking Lot 1A,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+47,34.064085,-118.17136,Parking Lot 2,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+48,34.065075,-118.16937,Parking Lot 3,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+49,34.066175,-118.169113,Parking Lot 4,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+50,34.070723,-118.167079,Parking Lot 5,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+51,34.068979,-118.16753,Parking Lot 6,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+52,34.068885,-118.163711,Parking Lot 7,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+53,34.069821,-118.164247,Parking Lot 7A,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+54,34.067214,-118.165626,Parking Lot 8,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+55,34.066269,-118.1654,Parking Lot 9,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+56,34.066017,-118.16613,Parking Lot 10,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+57,34.063484,-118.166521,Parking Lot 11,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+58,34.065034,-118.171645,Parking Structure A,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+59,34.065199,-118.170647,Parking Structure B,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+60,34.070053,-118.168206,Parking Structure C,(323) 343-6118,http://www.calstatela.edu/univ/police/parkinfo.php,parking
+61,34.067348,-118.167103,ATM Hub,none,none,atm
+62,34.067325,-118.168472,Golden Eagle ATM,none,none,atm
+63,34.064131,-118.169453,ATM,none,none,atm
+64,34.068538,-118.169143,Starbucks,none,http://www.calstatela.edu/univ/uas/foodservices.php,food
+65,34.067303,-118.168598,Golden Eagle Dining,none,http://www.calstatela.edu/univ/uas/foodservices.php,food
+66,34.067994,-118.168558,Student Union Dining,none,http://www.calstatela.edu/univ/uas/foodservices.php,food
+67,34.063036,-118.173115,Emergency Phone 1,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+68,34.063761,-118.172871,Emergency Phone 2,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+69,34.065252,-118.171806,Emergency Phone 3,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+70,34.064878,-118.171364,Emergency Phone 4,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+71,34.064586,-118.169701,Emergency Phone 5,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+72,34.064996,-118.166945,Emergency Phone 6,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+73,34.065495,-118.167371,Emergency Phone 7,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+74,34.066017,-118.165688,Emergency Phone 8,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+75,34.065955,-118.168494,Emergency Phone 9,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+76,34.067763,-118.166951,Emergency Phone 10,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+77,34.067648,-118.16438,Emergency Phone 11,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+78,34.068958,-118.16487,Emergency Phone 12,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+79,34.069068,-118.166056,Emergency Phone 13,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency
+80,34.069516,-118.16776,Emergency Phone 14,(323) 343-3700,http://www.calstatela.edu/univ/police/emergency.php,emergency

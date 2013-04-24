@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CSULA CampusMap</string>
+    <string name="location_action">Show on Map</string>
+    <string name="department_action">Go to Department page</string>
+    <string name="exit">Back to Main Page</string>
+    <string name="location_list">Location List</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="department_search">Search for a Department</string>
+    <string name="map_it">Map it</string>
+    <string name="header_desc">CSULA header image</string>
+    <string name="location_button_desc">Location button image</string>
+    <string name="map_button_desc">Map button image</string>
+    <string name="building">Building</string>
+    <string name="parking">Parking</string>
+    <string name="emergency">Emergency Phones</string>
+    <string name="food">Food</string>
+    <string name="atm">ATM</string>
+    <string name="department">Department</string>
+    <string name="college">College</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="room">Office Room</string>
+</resources>
