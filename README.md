@@ -8,7 +8,7 @@ The CampusMap App provides
 - Directions function on campus.
 - Autocomplete department searching.
 
--------------------
+----------
 
 APIs:
 
