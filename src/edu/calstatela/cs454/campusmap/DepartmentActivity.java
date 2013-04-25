@@ -97,15 +97,10 @@ public class DepartmentActivity extends ExpandableListActivity {
         		"Extended Studies and International Programs", "The Honors College"};
         private ArrayList<ArrayList<String>> children = new ArrayList<ArrayList<String>>();
         
+        
         public MyExpandableListAdapter() {
-        	addChildren("Arts and Letters");
-        	addChildren("Business and Economics");
-        	addChildren("Charter College of Education");
-        	addChildren("Engineering&Computer Science&Technology");
-        	addChildren("Health and Human Services");
-        	addChildren("Natural and Social Sciences");
-        	addChildren("Extended Studies and International Programs");
-        	addChildren("The Honors College");
+        	for (int i=0; i<groups.length; i++)  
+        		addChildren(groups[i]);
         }
         
         public void addChildren(String college) {
