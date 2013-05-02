@@ -25,9 +25,9 @@ import android.widget.Toast;
  */
 public class MainActivity extends Activity implements OnClickListener{
 
-	DBAdapter db = new DBAdapter(this);
-
+	public DBAdapter db = new DBAdapter(this);
 	AutoCompleteTextView textView = null;
+	static public String[] departments ; 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			db.close();
 		}
 		db.openRead();
-		String[] departments = db.getAlldepartments();
+		departments = db.getAlldepartments();
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, departments);
 		textView.setAdapter(adapter);
 		db.close();
@@ -129,15 +129,29 @@ public class MainActivity extends Activity implements OnClickListener{
 		case R.id.mapit:          
 			
 			if (this.textView.getText().toString().equals("")) {
-				showToast("Can't be empty !");
+				showToast("Text can't be empty !");
 				break;
 			}
-		    else {
-		        final String department = this.textView.getText().toString();
-		        Intent mainIntent = new Intent(MainActivity.this, SchoolMapActivity.class);
-		        mainIntent.putExtra("department", department);          
-		        MainActivity.this.startActivityForResult(mainIntent, 1);
-		        break;
+		    else {  	
+		    	boolean is_Found = false;
+		    	for(int i =0; i<departments.length; i++) {	
+		    		if (this.textView.getText().toString().equals( departments[i])) {
+		    				is_Found = true; 
+		    				break;
+		    		}
+		    	}
+		    	
+		    	if (!is_Found) {
+		    		showToast("No such department !");
+		    		break;
+		    	}
+		    	else if (is_Found) {
+		    		final String department = this.textView.getText().toString();
+		            Intent mainIntent = new Intent(MainActivity.this, SchoolMapActivity.class);
+		            mainIntent.putExtra("department", department);          
+		            MainActivity.this.startActivityForResult(mainIntent, 1);
+		            break;
+		    	}
 		    }	
 		}	
 	}
