@@ -11,7 +11,7 @@ import android.widget.TabHost;
  * This tab activity holds LocationActivity and DepartmentActivity together.
  * 
  * @author Rascal
- *
+ * 
  */
 public class Tab extends TabActivity {
 	
@@ -30,7 +30,6 @@ public class Tab extends TabActivity {
 		 *   5. Create an Intent to launch an Activity for the tab (to be reused)
 		 *   6. Initialize a TabSpec for each tab and add it to the TabHost
 		 *   7. setCurrentTab(0)
-		 *   
 		 */	    
 	    Resources res = getResources(); 
 	    TabHost tabHost = getTabHost();  

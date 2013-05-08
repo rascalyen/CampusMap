@@ -17,6 +17,7 @@ import android.util.Log;
  * departments (id, college, department, web, email, phone, room, locationID).
  * 
  * @author Rascal
+ * 
  */
 public class DBAdapter {
 	private static final String DATABASE_NAME = "campus.db";
@@ -113,7 +114,7 @@ public class DBAdapter {
 	 * @param phone
 	 * @param web
 	 * @param type
-	 * @return
+	 * @return the row ID of the newly inserted row, or -1 if an error occurred.
 	 */
 	public long insertLocation(String id, String latitude, String longitude, String title, 
 			String phone, String web, String type) {
@@ -140,7 +141,7 @@ public class DBAdapter {
 	 * @param phone
 	 * @param room
 	 * @param locationId
-	 * @return
+	 * @return the row ID of the newly inserted row, or -1 if an error occurred.
 	 */
 	public long insertDepartment(String id, String college, String department, String web, 
 			String email, String phone, String room, String locationId) {
@@ -158,10 +159,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of view by passing department name.
+	 * get a cursor of view by matching department name.
 	 * 
 	 * @param department
-	 * @return
+	 * @return the cursor of view with matching department name.
 	 * @throws SQLException
 	 */
 	public Cursor getViewByDepartment(String department) throws SQLException {		
@@ -177,10 +178,10 @@ public class DBAdapter {
 
 	
 	/**
-	 * get a cursor of locations table by passing location id.
+	 * get a cursor of locations table by matching location id.
 	 * 
 	 * @param id
-	 * @return
+	 * @return the cursor of locations table with matching location id.
 	 * @throws SQLException
 	 */
 	public Cursor getLocationById(int id) throws SQLException {
@@ -195,10 +196,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of locations table by passing location title.
+	 * get a cursor of locations table by matching location title.
 	 * 
 	 * @param title
-	 * @return
+	 * @return the cursor of locations table with matching location title.
 	 * @throws SQLException
 	 */
 	public Cursor getLocationByTitle(String title) throws SQLException {
@@ -213,10 +214,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of locations table by passing location type.
+	 * get a cursor of locations table by matching location type.
 	 * 
 	 * @param type
-	 * @return
+	 * @return the cursor of locations table with matching location type.
 	 * @throws SQLException
 	 */
 	public Cursor getLocationByType(String type) throws SQLException {
@@ -229,10 +230,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of departments table by passing department id.
+	 * get a cursor of departments table by matching department id.
 	 * 
 	 * @param id
-	 * @return
+	 * @return the cursor of departments table with matching department id.
 	 * @throws SQLException
 	 */
 	public Cursor getDepartmentById(int id) throws SQLException {
@@ -247,10 +248,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of departments table by passing department name.
+	 * get a cursor of departments table by matching department name.
 	 * 
 	 * @param department
-	 * @return
+	 * @return the cursor of departments table with matching department name.
 	 * @throws SQLException
 	 */
 	public Cursor getDepartmentByDepartment(String department) throws SQLException {
@@ -265,10 +266,10 @@ public class DBAdapter {
 	
 	
 	/**
-	 * get a cursor of departments table by passing college.
+	 * get a cursor of departments table by matching college.
 	 * 
 	 * @param college
-	 * @return
+	 * @return the cursor of departments table with matching college.
 	 * @throws SQLException
 	 */
 	public Cursor getDepartmentByCollege(String college) throws SQLException {
@@ -284,7 +285,7 @@ public class DBAdapter {
 	/**
 	 * get all department names from departments table.
 	 * 
-	 * @return
+	 * @return an array of department names in strings.
 	 */
 	public String[] getAlldepartments()
     {
@@ -309,7 +310,12 @@ public class DBAdapter {
     }
 	
 	
-	
+    /**
+     * DatabaseHelper is a helper class to make database schema creation.
+     * 
+     * @author Rascal
+     *
+     */
 	private static class DatabaseHelper extends SQLiteOpenHelper {
 
 		public DatabaseHelper(Context context) {
