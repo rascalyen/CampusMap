@@ -1,7 +1,6 @@
 package edu.calstatela.cs454.campusmap;
 
 import java.util.ArrayList;
-
 import android.app.ExpandableListActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -25,6 +24,7 @@ import android.widget.TextView;
  * DepartmentActivity provides expandable list views for 8 groups of department.
  * 
  * @author Rascal
+ * 
  */
 public class DepartmentActivity extends ExpandableListActivity {
 	
@@ -88,7 +88,8 @@ public class DepartmentActivity extends ExpandableListActivity {
     /**
      * MyExpandableListAdapter is a helper class to make customized expandable list
      * 
-     * @author Rascal    
+     * @author Rascal   
+     *  
      */    
     public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         

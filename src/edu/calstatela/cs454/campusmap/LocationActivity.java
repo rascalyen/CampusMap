@@ -25,6 +25,7 @@ import android.widget.TextView;
  * LocationActivity provides expandable list views for 5 groups of location.
  * 
  * @author Rascal
+ * 
  */
 public class LocationActivity extends ExpandableListActivity {
 
@@ -89,7 +90,8 @@ public class LocationActivity extends ExpandableListActivity {
    /**
     * MyExpandableListAdapter is a helper class to make customized expandable list
     * 
-    * @author Rascal    
+    * @author Rascal  
+    *   
     */
     public class MyExpandableListAdapter extends BaseExpandableListAdapter {
         

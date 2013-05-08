@@ -12,7 +12,7 @@ public class MapMarker extends com.google.android.maps.Overlay{
 	GeoPoint location = null;
 	Context context = null;
 	
-	/**
+    /**
 	 *   picks the image to use as marker,
 	 *   0 = user, 1 = building, 9 = destination, building by default
 	 */

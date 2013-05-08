@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -21,7 +22,7 @@ import android.widget.Toast;
  * Main activity of CampusMap APP
  * 
  * @author Rascal
- *
+ * 
  */
 public class MainActivity extends Activity implements OnClickListener{
 
@@ -33,23 +34,41 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		initiateDB(db);
+		insertDB(db);
 
 		ImageButton ib1 = (ImageButton) findViewById(R.id.imageButton1);
 		ib1.setOnClickListener(this);
 
 		ImageButton ib2 = (ImageButton) findViewById(R.id.imageButton2);
 		ib2.setOnClickListener(this);
-
-		this.textView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView1);
-
+		
 		Button b1= (Button) findViewById(R.id.mapit);
 		b1.setOnClickListener(this);
 
-		initiateDB(db);
+		this.textView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView1);
+		db.openRead();
+		departments = db.getAlldepartments();
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, departments);
+		textView.setAdapter(adapter);
+		db.close();
+	}
+	
+	
+	private void initiateDB(DBAdapter db) {
+		db.openRead();
+		db.close();
+	}	
 
-		/**
-		 *  if campus.db is empty, insert data into campus.db
-		 */
+
+	/**
+	 * if campus.db is empty, insert data into campus.db
+	 * 
+	 * @param db
+	 */
+	@SuppressLint("SdCardPath")
+	private void insertDB(DBAdapter db) {	
 		String destPath = "/data/data/"+getPackageName()+"/databases/campus.db";
 		File f = new File(destPath);
 		long dbSize = f.length();
@@ -62,17 +81,6 @@ public class MainActivity extends Activity implements OnClickListener{
 			}
 			db.close();
 		}
-		db.openRead();
-		departments = db.getAlldepartments();
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, departments);
-		textView.setAdapter(adapter);
-		db.close();
-	}
-
-
-	private void initiateDB(DBAdapter db) {
-		db.openRead();
-		db.close();
 	}
 
 	
@@ -133,13 +141,7 @@ public class MainActivity extends Activity implements OnClickListener{
 				break;
 			}
 		    else {  	
-		    	boolean is_Found = false;
-		    	for(int i =0; i<departments.length; i++) {	
-		    		if (this.textView.getText().toString().equals( departments[i])) {
-		    				is_Found = true; 
-		    				break;
-		    		}
-		    	}
+		    	boolean is_Found = isFound();
 		    	
 		    	if (!is_Found) {
 		    		showToast("No such department !");
@@ -157,6 +159,16 @@ public class MainActivity extends Activity implements OnClickListener{
 	}
 	
 	
+	private boolean isFound() {
+    	for(int i =0; i<departments.length; i++) {	
+    		if (this.textView.getText().toString().equals( departments[i])) {
+    				return true; 
+    		}
+    	}
+		return false;
+	}
+
+
 	private void showToast(String message) {
 		Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 	}

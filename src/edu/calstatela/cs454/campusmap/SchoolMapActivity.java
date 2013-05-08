@@ -17,7 +17,7 @@ import android.widget.Button;
  * SchoolMapActivity provides map functions.
  * 
  * @author Rascal
- *
+ * 
  */
 public class SchoolMapActivity extends MapActivity {
 
@@ -117,7 +117,10 @@ public class SchoolMapActivity extends MapActivity {
 		this.view.invalidate();
 	}	
 	
-		
+	
+   /**
+    *   listen user actions on buttons
+	*/		
 	protected void buttonListeners(){
 		
 		final Button buildingsButton = (Button) findViewById(R.id.buildings);
@@ -155,6 +158,7 @@ public class SchoolMapActivity extends MapActivity {
 			}
 		});
 	}
+	
 
    /**
     *   listen user actions on map
@@ -252,6 +256,7 @@ public class SchoolMapActivity extends MapActivity {
 		Cursor groupData = null;
 
 		switch (groupType) {
+		
 		case 1:
 			this.showGroupBuildings = !this.showGroupBuildings;
 
@@ -275,11 +280,9 @@ public class SchoolMapActivity extends MapActivity {
 					groupData.moveToNext();
 				}
 				groupData.close();
-				
-			} else {
-				
-			}
+			} 
 			break;
+			
 		case 2:
 			this.showGroupParking = !this.showGroupParking;
 			
@@ -302,12 +305,10 @@ public class SchoolMapActivity extends MapActivity {
 
 					groupData.moveToNext();
 				}
-				groupData.close();
-				
-			} else {
-				
-			}
+				groupData.close();			
+			} 
 			break;
+			
 		case 3:
 			this.showGroupEmergency = !this.showGroupEmergency;
 			
@@ -331,11 +332,9 @@ public class SchoolMapActivity extends MapActivity {
 					groupData.moveToNext();
 				}
 				groupData.close();
-				
-			} else {
-				
-			}
+			} 
 			break;
+			
 		case 4:
 			this.showGroupATM = !this.showGroupATM;
 			
@@ -358,12 +357,10 @@ public class SchoolMapActivity extends MapActivity {
 
 					groupData.moveToNext();
 				}
-				groupData.close();
-				
-			} else {
-				
+				groupData.close();	
 			}
 			break;
+			
 		case 5:
 			this.showGroupFood = !this.showGroupFood;
 			
@@ -386,14 +383,10 @@ public class SchoolMapActivity extends MapActivity {
 
 					groupData.moveToNext();
 				}
-				groupData.close();
-				
-			} else {
-				
+				groupData.close();	
 			}
 			break;
-		default:
-			break;
+			
 		}
 		
 		this.view.invalidate();
